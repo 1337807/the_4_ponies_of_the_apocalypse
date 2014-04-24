@@ -1,0 +1,31 @@
+common: &default_settings
+  license_key: 'bootstrap_newrelic_admin_license_key_000'
+  host: localhost
+  port: 8081
+  ssl: false
+  monitor_mode: true
+  app_name: The 4 Ponies of The Apocalypse
+  developer_mode: false
+  log_level: debug
+  browser_monitoring:
+      auto_instrument: true
+  audit_log:
+    enabled: false
+  capture_params: false
+  transaction_tracer:
+    enabled: true
+    transaction_threshold: apdex_f
+    record_sql: obfuscated
+    stack_trace_threshold: 0.500
+  error_collector:
+    enabled: true
+    capture_source: true
+    ignore_errors: "ActionController::RoutingError,Sinatra::NotFound"
+development:
+  <<: *default_settings
+test:
+  <<: *default_settings
+production:
+  <<: *default_settings
+staging:
+  <<: *default_settings
