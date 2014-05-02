@@ -17,8 +17,8 @@ development:
   encoding: unicode
   database: the_4_ponies_of_the_apocalypse_development
   pool: 5
-  username: zomg_ponies
-  password:
+  username: docker
+  password: docker
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -43,13 +43,13 @@ test:
   encoding: unicode
   database: the_4_ponies_of_the_apocalypse_test
   pool: 5
-  username: zomg_ponies
-  password:
+  username: docker
+  password: docker
 
 production:
   adapter: postgresql
   encoding: unicode
   database: the_4_ponies_of_the_apocalypse_production
   pool: 5
-  username: zomg_ponies
-  password:
+  username: docker
+  password: docker
