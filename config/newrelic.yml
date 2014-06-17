@@ -1,8 +1,6 @@
 common: &default_settings
-  license_key: 'bootstrap_newrelic_admin_license_key_000'
-  host: localhost
-  port: 8081
-  ssl: false
+  license_key: <%= ENV['NEWRELIC_LICENSE_KEY'] %>
+  host: staging-collector.newrelic.com
   monitor_mode: true
   app_name: The 4 Ponies of The Apocalypse
   developer_mode: false
