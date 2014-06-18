@@ -1,5 +1,5 @@
 PATH
-  remote: ../new_relic/ruby_agent
+  remote: vendor/gems
   specs:
     newrelic_rpm (3.9.0)
 
