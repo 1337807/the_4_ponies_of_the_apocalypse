@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# gem 'newrelic_rpm', path: '../../../ruby_agent'
+gem 'newrelic_rpm', path: '../new_relic/ruby_agent'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
